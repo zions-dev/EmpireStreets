@@ -15,7 +15,7 @@ Empire Streets — RAGE:MP
 
 Технологии
 
-- Server: C#, .NET 8, EF Core (PostgreSQL), Redis (кэш/рейтинги)
+- Server: C#, netcoreapp3.1, EF Core (PostgreSQL), Redis (кэш/рейтинги)
 - Client: TypeScript (RAGE:MP client bridge)
 - UI: Vue 3 (TS), Pinia, адаптивная верстка (CEF)
 
@@ -34,9 +34,9 @@ Empire Streets — RAGE:MP
    - PostgreSQL: localhost:5432 (user: empire, pass: empire, db: empire)
    - Redis: localhost:6379
 
-Сборка сервера (.NET)
+Сборка сервера
 
-- Требуется .NET 8 SDK.
+- Требуется netcoreapp3.1.
 - В каталоге `server` создайте solution и проекты (если не используете уже добавленные .csproj):
   - `dotnet new sln -n EmpireStreets`
   - `dotnet sln add src/EmpireStreets.Domain/EmpireStreets.Domain.csproj`
